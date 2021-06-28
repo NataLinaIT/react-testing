@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Input({ secretWord }) {
-  const [curreentGuess, setCurrentGuess] = React.useState("");
+  const [currentGuess, setCurrentGuess] = React.useState("");
 
   return (
     <div data-test="component-input">
@@ -12,7 +12,7 @@ export default function Input({ secretWord }) {
           className="mb-2 mx-sm-3"
           type="text"
           placeholder="Enter guess"
-          value={curreentGuess}
+          value={currentGuess}
           onChange={(event) => setCurrentGuess(event.target.value)}
         />
         <button
